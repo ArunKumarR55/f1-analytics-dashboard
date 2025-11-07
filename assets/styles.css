@@ -44,21 +44,21 @@ h1, h2, h3, h4, h5 {
     flex: 1 !important; /* <-- ADD THIS LINE */
     text-align: center !important; /* <-- ADD THIS LINE */
 
-    background-color: rgba(34, 34, 34, 0.5) !important; /* 75% transparent dark gray */
+    background-color: rgba(46, 45, 45, 0.5) !important; /* 75% transparent dark gray */
     color: #FFFFFF !important; /* FORCE light text */
     border: 0px solid #333 !important;
     padding: 18px !important;
     font-size: 18px !important;
     font-weight: bold !important;
     margin-right: 20px; /* <-- ADDS A GAP BETWEEN TABS */
-    border-radius: 5px 5px 5px 5px; /* <-- Rounds the top corners */
+    border-radius: 8px 8px 8px 8px; /* <-- Rounds the top corners */
 }
 
 .Tab--selected {
     background-color: rgba(225, 6, 0, 0.8) !important; /* FORCE F1 Red background */
     color: #FFFFFF !important; /* FORCE white text */
     border: 0px solid #E10600 !important;
-    border-radius: 6px;
+    border-radius: 8px;
 }
 /* --- Fixes the gap on the last tab --- */
 .Tab:last-child {
@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5 {
 .graph-container {
     background-color: rgba(31, 31, 31, 0.5); /* Was 0.65 */
     padding: 20px;
-    border-radius: 6px;
+    border-radius: 8px;
     margin-top: 20px;
     border: 0px;
 }
@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5 {
 
 /* --- Dropdown Color Fix --- */
 .Dropdown {
-    color: #111111;
+    color: #111111e3;
 }
 .Select-control, .__react-select-control {
     background-color: #333333 !important;
@@ -132,4 +132,14 @@ h1, h2, h3, h4, h5 {
 /* --- Fixes Slider Number Color --- */
 .rc-slider-mark-text {
     color: #FFFFFF !important; /* Sets the number color to light gray */
+}
+
+/* --- MODIFIED STYLE FOR GRAPH DESCRIPTIONS --- */
+.graph-description {
+    color: #ffffff; /* Light gray, slightly dimmer than white */
+    font-size: 1rem; /* --- Made slightly larger (was 0.9rem) --- */
+    font-style: bold;
+    margin-top: 5px; /* --- Replaced negative margin --- */
+    margin-bottom: 15px;
+    min-height: 40px; /* --- Added to help align boxes --- */
 }
