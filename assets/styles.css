@@ -1,0 +1,135 @@
+/* --- Background Image (Light Overlay) --- */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #E0E0E0;
+    /* Added a LIGHT 70% dark overlay */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/assets/f1_background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #111111; /* Fallback */
+}
+
+/* --- Made containers slightly more opaque --- */
+.header {
+    background-color: rgba(31, 31, 31, 0.5); /* Was 0.65 */
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #E10600; /* F1 Red */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo {
+    height: 30px;
+    margin-right: 20px;
+}
+
+/* --- Text Color Fix --- */
+h1, h2, h3, h4, h5 {
+    color: #FFFFFF; /* Bright white text */
+}
+
+/* --- TAB STYLING FIX (FORCED OVERRIDE) --- */
+/* --- TAB STYLING FIX (FORCED OVERRIDE) --- */
+/* --- TAB STYLING FIX (FORCED OVERRIDE) --- */
+.Tabs {
+    background-color: transparent; /* Makes the main container invisible */
+    padding: 10px 0 0 0; /* Keeps the tabs spaced from the filter box */
+    border: none !important; /* Removes any default border */
+    display: flex !important; /* <-- ADD THIS LINE */
+}
+.Tab {
+    flex: 1 !important; /* <-- ADD THIS LINE */
+    text-align: center !important; /* <-- ADD THIS LINE */
+
+    background-color: rgba(34, 34, 34, 0.5) !important; /* 75% transparent dark gray */
+    color: #FFFFFF !important; /* FORCE light text */
+    border: 0px solid #333 !important;
+    padding: 18px !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    margin-right: 20px; /* <-- ADDS A GAP BETWEEN TABS */
+    border-radius: 5px 5px 5px 5px; /* <-- Rounds the top corners */
+}
+
+.Tab--selected {
+    background-color: rgba(225, 6, 0, 0.8) !important; /* FORCE F1 Red background */
+    color: #FFFFFF !important; /* FORCE white text */
+    border: 0px solid #E10600 !important;
+    border-radius: 6px;
+}
+/* --- Fixes the gap on the last tab --- */
+.Tab:last-child {
+    margin-right: 0 !important;
+}
+
+/* --- Made containers slightly more opaque --- */
+.graph-container {
+    background-color: rgba(31, 31, 31, 0.5); /* Was 0.65 */
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 20px;
+    border: 0px;
+}
+
+/* --- Made containers slightly more opaque --- */
+.kpi-card {
+    background-color: rgba(31, 31, 31, 0.5); /* Was 0.65 */
+    border: 0px solid #333;
+    color: #FFFFFF;
+    text-align: center;
+}
+.kpi-card .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.kpi-card .card-body {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff0800;
+}
+
+/* --- Sliders --- */
+.Slider {
+    padding: 20px;
+}
+.Slider .rc-slider-track {
+    background-color: #E10600;
+}
+.Slider .rc-slider-handle {
+    border-color: #E10600;
+}
+
+/* --- Dropdown Color Fix --- */
+.Dropdown {
+    color: #111111;
+}
+.Select-control, .__react-select-control {
+    background-color: #333333 !important;
+    border: 1px solid #555 !important;
+}
+.Select-value-label, .__react-select-single-value {
+    color: #FFFFFF !important;
+}
+.Select-placeholder, .__react-select-placeholder {
+    color: #FFFFFF !important;
+}
+.Select-menu-outer, .__react-select-menu-list {
+    background-color: #333333 !important;
+    border: 1px solid #555 !important;
+}
+.Select-option, .__react-select-option {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+.Select-option:hover, .__react-select-option--is-focused {
+    background-color: rgba(225, 6, 0, 0.8) !important; /* F1 Red on hover */
+    color: #FFFFFF !important;
+}
+/* --- Fixes Slider Number Color --- */
+.rc-slider-mark-text {
+    color: #FFFFFF !important; /* Sets the number color to light gray */
+}
